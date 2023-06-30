@@ -30,10 +30,12 @@ function onInputClick(event) {
 }
 // console.log(inputData);
 
-function checkInputAfterReload() {
+function checkInputAfterReload(event) {
   if (inputData) {
     const { email, message } = form.elements;
+    // console.log(form.elements);
     email.value = inputData.email || '';
     message.value = inputData.message || '';
   }
 }
+
